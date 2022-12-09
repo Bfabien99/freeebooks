@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}freeeBooks - books{% endblock %}
+
+{% block body %}
+<section>
+    <h1>All books</h1>
+    {% for book in books %}
+        {{book['title']}}
+    {% endfor %}
+</section>
+{% endblock %}
